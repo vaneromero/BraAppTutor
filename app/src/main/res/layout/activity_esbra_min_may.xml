@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerT3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/traduccion2"
+    tools:context=".traductor.esbra.EsbraMinMay">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/comdsp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_renderMode="automatic"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/confdt44"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_renderMode="automatic"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbarT3"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:minHeight="?attr/actionBarSize"
+                        android:outlineAmbientShadowColor="@color/transparente"
+                        android:outlineSpotShadowColor="@color/transparente"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:subtitleTextColor="@color/transparente"
+                        app:titleTextColor="@color/transparente"
+                        tools:ignore="UnusedAttribute" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/comp1q"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/confdt44"
+                    app:lottie_renderMode="automatic"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+    <TextView
+        android:id="@+id/fotito1111"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/nina" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:focusable="false"
+                            app:cardBackgroundColor="#D5CFF9"
+                            app:cardCornerRadius="52dp"
+                            app:cardElevation="30dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <TextView
+                                    android:id="@+id/bu311"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                    android:gravity="center"
+                                    android:text="@string/cancelar"
+                                    android:textColor="#000000"
+                                    android:textSize="35sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout11"
+                        tools:layout_editor_absoluteX="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:orientation="vertical"
+                            tools:ignore="RtlHardcoded">
+
+                            <Space
+                                android:layout_width="0sp"
+                                android:layout_height="15dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/avisos1"
+                                android:gravity="right"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                    android:padding="10dp"
+                                    android:text="@string/espa_ol_braille"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/negro"
+                                    android:textSize="30sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="MissingConstraints" />
+
+                                <LinearLayout
+                                    android:id="@+id/comm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:background="@drawable/minuss" />
+
+                                    <TextView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:background="@drawable/mayy" />
+
+                                    <TextView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:background="@drawable/numm" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="0sp"
+                                android:layout_height="10dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/contenedora1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/comp1q">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="59dp"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/gentium_book_basic_bold"
+                                        android:gravity="center"
+                                        android:text="@string/letra_en_espa_ol"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/negro"
+                                        android:textSize="35sp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:textAlignment="center">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal">
+
+                                                    <EditText
+                                                        android:id="@+id/letraEspa"
+                                                        android:layout_width="120dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:background="@drawable/editex1"
+                                                        android:drawablePadding="10dp"
+                                                        android:ems="10"
+                                                        android:fontFamily="@font/gentium_basic"
+                                                        android:hint="@string/letra"
+                                                        android:inputType="textPersonName"
+                                                        android:maxLength="1"
+                                                        android:minHeight="48dp"
+                                                        android:textAlignment="center"
+                                                        android:textColor="@color/tres"
+                                                        android:textColorHint="@color/tres" />
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="0sp"
+                                                    android:layout_height="10dp" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <Button
+                                                        android:id="@+id/Convertir"
+                                                        style="@style/CustomButton1"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:fontFamily="@font/gentium_basic"
+                                                        android:gravity="center"
+                                                        android:paddingStart="10dp"
+                                                        android:paddingEnd="10dp"
+                                                        android:text="@string/convertir"
+                                                        android:textAlignment="center"
+                                                        android:textAllCaps="false"
+                                                        android:textColor="@color/blanco"
+                                                        android:textSize="25sp"
+                                                        android:textStyle="bold"
+                                                        tools:ignore="RtlCompat,RtlSymmetry,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                                                    <Space
+                                                        android:layout_width="0sp"
+                                                        android:layout_height="10dp" />
+
+                                                    <TextView
+                                                        android:id="@+id/letraelegida"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:fontFamily="@font/gentium_book_basic_bold"
+                                                        android:gravity="center_horizontal"
+                                                        android:textAlignment="center"
+                                                        android:textColor="@color/colorAccent"
+                                                        android:textSize="20sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+                                            <Space
+                                                android:layout_width="0sp"
+                                                android:layout_height="10dp" />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center"
+                                                    android:text="@string/resultado_en_minuscula"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/negro"
+                                                    android:textSize="25sp" />
+
+                                                <Space
+                                                    android:layout_width="0sp"
+                                                    android:layout_height="10dp" />
+
+                                                <TextView
+                                                    android:id="@+id/tarjetaBase"
+                                                    android:layout_width="164dp"
+                                                    android:layout_height="229dp"
+                                                    android:background="@drawable/tarjetitas" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center"
+                                                    android:text="@string/resultado_en_mayuscula"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/negro"
+                                                    android:textSize="25sp" />
+
+                                                <Space
+                                                    android:layout_width="0sp"
+                                                    android:layout_height="10dp" />
+
+                                                <TextView
+                                                    android:id="@+id/tarjetaBase1"
+                                                    android:layout_width="328dp"
+                                                    android:layout_height="229dp"
+                                                    android:background="@drawable/conjunto" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/cas"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:visibility="gone">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center"
+                                                    android:text="@string/resultado_en_numero"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/negro"
+                                                    android:textSize="25sp" />
+
+                                                <Space
+                                                    android:layout_width="0sp"
+                                                    android:layout_height="10dp" />
+
+                                                <TextView
+                                                    android:id="@+id/letraelegida1"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:fontFamily="@font/gentium_book_basic_bold"
+                                                    android:gravity="center_horizontal"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/colorAccent"
+                                                    android:textSize="20sp" />
+
+                                                <Space
+                                                    android:layout_width="0sp"
+                                                    android:layout_height="10dp" />
+
+                                                <TextView
+                                                    android:id="@+id/tarjetaBase3"
+                                                    android:layout_width="328dp"
+                                                    android:layout_height="229dp"
+                                                    android:background="@drawable/conjunto" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="0sp"
+                                android:layout_height="40dp" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_viewT3"
+        style="@style/Widget.Custom.NavigationView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clipToPadding="false"
+        android:theme="@style/Theme.NavigationView"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/main_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

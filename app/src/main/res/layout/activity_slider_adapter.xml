@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imaagen"
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:layout_marginTop="100dp"
+        android:layoutAnimation="@anim/abajo"
+        android:src="@drawable/jovena" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:gravity="center"
+        android:layoutAnimation="@anim/abajo"
+        android:text="@string/usuario1"
+        android:textColor="@color/negro"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/titulo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imaagen"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="62dp"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:layoutAnimation="@anim/abajo"
+        android:text="@string/usuario1"
+        android:textAlignment="textStart"
+        android:textColor="@color/bola"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/gentium_book_basic_bold</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+        <item name="android:forceDarkAllowed" tools:ignore="NewApi">false</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/navegaa</item>
+
+        <!-- Navigation Drawer -->
+        <item name="colorStateNavigationItem">@color/menu_item_color_state</item>
+        //letra sin seleccionar
+        <item name="colorNavigationItemNormal">@color/mako</item>
+        //letra en selección
+        <item name="colorNavigationItemSelected">@color/blanco</item>
+        //fondo en selección
+        <item name="colorNavigationItemBackgroundSelected">@color/negro</item>
+        //fondo sombra en selección
+        <item name="colorNavigationItemBackgroundPressed">@color/negro</item>
+        //forma del selector
+        <item name="drawableNavigationItemBackground">@drawable/menu_item_background_color_state</item>
+       //divisor
+        <item name="android:listDivider">@color/colorAccent</item>
+    </style>
+    <style name="CustomButton1">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:background">@drawable/botones</item>
+        <item name="android:textColor">@color/tres</item>
+    </style>
+
+
+    <style name="AppTheme1d" parent="@style/Widget.MaterialComponents.Slider">
+        <item name="labelStyle">@style/My_Tooltip</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Slider</item>
+        <item name="android:fontFamily">@font/gentium_book_basic_bold</item>
+    </style>
+
+    <style name="My_Tooltip" parent="Widget.MaterialComponents.Tooltip">
+        <!-- font for your slider  tooltip -->
+        <item name="android:fontFamily">@font/gentium_book_basic_bold</item>
+    </style>
+
+    <style name="ThemeOverlay.Slider" parent="">
+        <item name="android:fontFamily">@font/gentium_book_basic_bold</item>
+    </style>
+
+    <style name="CustomButton12">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:background">@drawable/botonaplicar</item>
+        <item name="android:textColor">@color/tres</item>
+    </style>
+    <style name="CustomButton123">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:background">@drawable/botoncancelar</item>
+        <item name="android:textColor">@color/tres</item>
+    </style>
+    //barra lateral
+    <style name="Theme.NavigationView" parent="AppTheme">
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="itemIconSize">60dp</item>
+        <item name="windowFixedWidthMinor">200dp</item>
+    </style>
+
+    <style name="Widget.Custom.NavigationView" parent="Widget.Design.NavigationView">
+        <item name="itemTextAppearance">@style/TextAppearance.Custom.Navigation.Item</item>
+        <item name="itemTextColor">?attr/colorStateNavigationItem</item>
+        <item name="itemBackground">?attr/drawableNavigationItemBackground</item>
+        <item name="android:background">@drawable/shape_ajustes1</item>
+
+    </style>
+
+    <style name="TextAppearance.Custom.Navigation.Item" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:fontFamily">@font/gentium_book_basic_bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuprincipal.MenuPrin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/menupp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".menuprincipal.MenuPrin">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/Optiones1"
+                android:layout_width="165dp"
+                android:layout_height="125dp"
+                android:layout_gravity="left"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/opcios"
+                app:lottie_renderMode="automatic"
+                tools:ignore="MissingClass,RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/cardViews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cont44"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_renderMode="automatic"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:minHeight="?attr/actionBarSize"
+                        android:outlineAmbientShadowColor="@color/transparente"
+                        android:outlineSpotShadowColor="@color/transparente"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:subtitleTextColor="@color/transparente"
+                        app:titleTextColor="@color/transparente"
+                        tools:ignore="UnusedAttribute" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/adshn"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        app:layout_constraintEnd_toStartOf="@+id/Creditosfgs"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/ayuda"
+                        app:lottie_renderMode="automatic"
+                        tools:ignore="MissingClass,NotSibling,RtlHardcoded"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/Creditosfgs"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        app:layout_constraintEnd_toStartOf="@+id/toolbar"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/creditos"
+                        app:lottie_renderMode="automatic"
+                        tools:ignore="MissingClass,RtlHardcoded" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:outlineAmbientShadowColor="@color/transparente"
+                    android:outlineSpotShadowColor="@color/transparente"
+                    app:cardBackgroundColor="@color/transparente"
+                    app:cardCornerRadius="80dp"
+                    tools:ignore="UnusedAttribute">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/contenedorr"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+
+                               <TextView
+                                   android:id="@+id/fotito"
+                                   android:layout_width="200sp"
+                                   android:layout_height="200sp"
+                                   android:background="@drawable/nina"
+                                   android:layout_gravity="center"/>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:focusable="false"
+                                app:cardBackgroundColor="#D5CFF9"
+                                app:cardCornerRadius="52dp"
+                                app:cardElevation="30dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="MissingConstraints">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    tools:ignore="UseCompoundDrawables">
+
+                                    <TextView
+                                        android:id="@+id/bu"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/gentium_book_basic_bold"
+                                        android:gravity="center"
+                                        android:text="@string/cancelar"
+                                        android:textColor="#000000"
+                                        android:textSize="35sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/gentium_book_basic_bold"
+                            android:gravity="center"
+                            android:text="@string/avisos"
+                            android:textAlignment="center"
+                            android:textColor="@color/negro"
+                            android:textSize="40sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="140sp"
+                                    android:layout_height="15dp"
+                                    android:background="@drawable/abajod"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    tools:ignore="MissingConstraints" />
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayout7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:visibility="gone"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                                        android:id="@+id/swipeRefreshAvisos"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/menuAvisos"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:orientation="horizontal"
+                                            tools:ignore="MissingConstraints"
+                                            tools:listitem="@layout/list_item4" />
+                                    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayout9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="210dp"
+                                        android:outlineAmbientShadowColor="@color/transparente"
+                                        android:outlineSpotShadowColor="@color/transparente"
+                                        app:cardBackgroundColor="@color/transparente"
+                                        app:cardCornerRadius="40dp"
+                                        app:cardUseCompatPadding="true"
+                                        tools:ignore="UnusedAttribute">
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/online"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:layout_marginTop="4dp"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintHorizontal_bias="0.925"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent" />
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/avisos1"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:padding="16dp">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/gentium_book_basic_bold"
+                                                android:gravity="center_horizontal"
+                                                android:maxLength="50"
+                                                android:text="@string/con_ctate_a_internet_para_ver_los_avisos"
+                                                android:textAlignment="center"
+                                                android:textColor="@color/colorAccent"
+                                                android:textSize="30sp" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/gentium_book_basic_bold"
+                                android:gravity="center"
+                                android:text="@string/men_principal"
+                                android:textAlignment="center"
+                                android:textColor="@color/negro"
+                                android:textSize="40sp" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/textView12"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <ScrollView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="16dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/uno1"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:outlineAmbientShadowColor="@color/transparente"
+                                                android:outlineSpotShadowColor="@color/transparente"
+                                                app:cardBackgroundColor="@color/transparente"
+                                                app:cardCornerRadius="40dp"
+                                                app:cardUseCompatPadding="true"
+                                                tools:ignore="UnusedAttribute">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/avisos1"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="130dp"
+                                                            android:background="@drawable/traduccion"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#000000"
+                                                            android:textSize="20sp" />
+
+                                                        <Space
+                                                            android:layout_width="10sp"
+                                                            android:layout_height="0sp" />
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:text="@string/traductor"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#050961"
+                                                            android:textSize="30sp" />
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginStart="25dp"
+                                                        android:fontFamily="@font/gentium_book_basic_bold"
+                                                        android:gravity="left"
+                                                        android:maxLength="20"
+                                                        android:text="@string/no_requiere_internet"
+                                                        android:textColor="#F2000000"
+                                                        android:textSize="15sp" />
+                                                </LinearLayout>
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/dos2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:outlineAmbientShadowColor="@color/transparente"
+                                                android:outlineSpotShadowColor="@color/transparente"
+                                                app:cardBackgroundColor="@color/transparente"
+                                                app:cardCornerRadius="40dp"
+                                                app:cardUseCompatPadding="true"
+                                                tools:ignore="UnusedAttribute">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/avisos1"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="130dp"
+                                                            android:background="@drawable/juegoss"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#000000"
+                                                            android:textSize="20sp" />
+
+                                                        <Space
+                                                            android:layout_width="10sp"
+                                                            android:layout_height="0sp" />
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:text="@string/juegos"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#050961"
+                                                            android:textSize="30sp" />
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginStart="25dp"
+                                                        android:fontFamily="@font/gentium_book_basic_bold"
+                                                        android:gravity="left"
+                                                        android:text="@string/sin_internet_con_excepci_n_de_record_mundial"
+                                                        android:textColor="#F2000000"
+                                                        android:textSize="15sp" />
+                                                </LinearLayout>
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/tres3"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:outlineAmbientShadowColor="@color/transparente"
+                                                android:outlineSpotShadowColor="@color/transparente"
+                                                app:cardBackgroundColor="@color/transparente"
+                                                app:cardCornerRadius="40dp"
+                                                app:cardUseCompatPadding="true"
+                                                tools:ignore="UnusedAttribute">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/avisos1"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="130dp"
+                                                            android:background="@drawable/history"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#000000"
+                                                            android:textSize="30sp" />
+
+                                                        <Space
+                                                            android:layout_width="10sp"
+                                                            android:layout_height="0sp" />
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:text="@string/historia"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#050961"
+                                                            android:textSize="30sp" />
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginStart="25dp"
+                                                        android:fontFamily="@font/gentium_book_basic_bold"
+                                                        android:gravity="left"
+                                                        android:text="@string/no_requiere_internet_a_excepci_n_del_ver_mas"
+                                                        android:textColor="#F2000000"
+                                                        android:textSize="15sp" />
+                                                </LinearLayout>
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/cuatro4"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:outlineAmbientShadowColor="@color/transparente"
+                                                android:outlineSpotShadowColor="@color/transparente"
+                                                app:cardBackgroundColor="@color/transparente"
+                                                app:cardCornerRadius="40dp"
+                                                app:cardUseCompatPadding="true"
+                                                tools:ignore="UnusedAttribute">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/avisos1"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="130dp"
+                                                            android:background="@drawable/redess1"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#000000"
+                                                            android:textSize="20sp" />
+
+                                                        <Space
+                                                            android:layout_width="10sp"
+                                                            android:layout_height="0sp" />
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:text="@string/redes_sociales"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#050961"
+                                                            android:textSize="30sp" />
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginStart="25dp"
+                                                        android:fontFamily="@font/gentium_book_basic_bold"
+                                                        android:gravity="left"
+                                                        android:text="@string/si_requiere_internet_entrar_a_las_redes_sociales"
+                                                        android:textColor="#F2000000"
+                                                        android:textSize="15sp" />
+                                                </LinearLayout>
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/cinco5"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:outlineAmbientShadowColor="@color/transparente"
+                                                android:outlineSpotShadowColor="@color/transparente"
+                                                app:cardBackgroundColor="@color/transparente"
+                                                app:cardCornerRadius="40dp"
+                                                app:cardUseCompatPadding="true"
+                                                tools:ignore="UnusedAttribute">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/avisos1"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="130dp"
+                                                            android:background="@drawable/mat1"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#000000"
+                                                            android:textSize="20sp" />
+
+                                                        <Space
+                                                            android:layout_width="10sp"
+                                                            android:layout_height="0sp" />
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:text="@string/material_de_apoyo"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#050961"
+                                                            android:textSize="30sp" />
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginStart="25dp"
+                                                        android:fontFamily="@font/gentium_book_basic_bold"
+                                                        android:gravity="left"
+                                                        android:text="@string/no_requiere_internet_a_excepci_n_del_ver_mas"
+                                                        android:textColor="#F2000000"
+                                                        android:textSize="15sp" />
+                                                </LinearLayout>
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/seis6"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:outlineAmbientShadowColor="@color/transparente"
+                                                android:outlineSpotShadowColor="@color/transparente"
+                                                app:cardBackgroundColor="@color/transparente"
+                                                app:cardCornerRadius="40dp"
+                                                app:cardUseCompatPadding="true"
+                                                tools:ignore="UnusedAttribute">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/avisos1"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="130dp"
+                                                            android:background="@drawable/estrellas"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#000000"
+                                                            android:textSize="20sp" />
+
+                                                        <Space
+                                                            android:layout_width="10sp"
+                                                            android:layout_height="0sp" />
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:text="@string/extra"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#050961"
+                                                            android:textSize="30sp" />
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginStart="25dp"
+                                                        android:fontFamily="@font/gentium_book_basic_bold"
+                                                        android:gravity="left"
+                                                        android:text="@string/no_requiere_internet"
+                                                        android:textColor="#F2000000"
+                                                        android:textSize="15sp" />
+                                                </LinearLayout>
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/siete7"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:outlineAmbientShadowColor="@color/transparente"
+                                                android:outlineSpotShadowColor="@color/transparente"
+                                                app:cardBackgroundColor="@color/transparente"
+                                                app:cardCornerRadius="40dp"
+                                                app:cardUseCompatPadding="true"
+                                                tools:ignore="UnusedAttribute">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/avisos1"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="130dp"
+                                                            android:background="@drawable/producc"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#000000"
+                                                            android:textSize="30sp" />
+
+                                                        <Space
+                                                            android:layout_width="10sp"
+                                                            android:layout_height="0sp" />
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:text="@string/catalogo"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#050961"
+                                                            android:textSize="30sp" />
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginStart="25dp"
+                                                        android:fontFamily="@font/gentium_book_basic_bold"
+                                                        android:gravity="left"
+                                                        android:text="@string/si_requiere_internet_al_entrar_en_submenu"
+                                                        android:textColor="#F2000000"
+                                                        android:textSize="15sp" />
+                                                </LinearLayout>
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/ocho8"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:outlineAmbientShadowColor="@color/transparente"
+                                                android:outlineSpotShadowColor="@color/transparente"
+                                                app:cardBackgroundColor="@color/transparente"
+                                                app:cardCornerRadius="40dp"
+                                                app:cardUseCompatPadding="true"
+                                                tools:ignore="UnusedAttribute">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:background="@drawable/avisos1"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:layout_width="130dp"
+                                                            android:layout_height="130dp"
+                                                            android:background="@drawable/chat"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#000000"
+                                                            android:textSize="20sp" />
+
+                                                        <Space
+                                                            android:layout_width="10sp"
+                                                            android:layout_height="0sp" />
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="@font/gentium_book_basic_bold"
+                                                            android:gravity="center_horizontal"
+                                                            android:maxLength="20"
+                                                            android:text="@string/chat"
+                                                            android:textAlignment="center"
+                                                            android:textColor="#050961"
+                                                            android:textSize="30sp" />
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginStart="25dp"
+                                                        android:fontFamily="@font/gentium_book_basic_bold"
+                                                        android:gravity="left"
+                                                        android:maxLength="20"
+                                                        android:text="@string/si_requiere_internet"
+                                                        android:textColor="#F2000000"
+                                                        android:textSize="15sp"
+                                                        tools:ignore="RtlHardcoded" />
+                                                </LinearLayout>
+                                            </androidx.cardview.widget.CardView>
+                                        </LinearLayout>
+                                    </ScrollView>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:layout_width="15dp"
+                                    android:layout_height="140sp"
+                                    android:background="@drawable/abajof1"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wiff"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginTop="120sp"
+                android:background="@drawable/wifis"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        style="@style/Widget.Custom.NavigationView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clipToPadding="false"
+        android:theme="@style/Theme.NavigationView"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/main_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#B7AC6AE0</color>
+    <color name="colorPrimaryDark">#7E3700B3</color>
+    <color name="colorAccent">#6C0404</color>
+    <color name="negro">#000000</color>
+    <color name="tres">#BD000000</color>
+    <color name="colorLabel">#E7EBED</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="transparente">#00FFFFFF</color>
+    <color name="bola">#454E7D</color>
+    <color name="navegaa">#AB5C457D</color>
+    <color name="colorItemRight">#813fd7</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="purple_500">#27283a</color>
+    <color name="teal_7001">#feeb3c</color>
+    <color name="teal_7002">#A8018786</color>
+    <color name="mako">#000000</color>
+    <color name="tercero">#80B7E5AD</color>
+    <color name="cuarto">#801DB6EF</color>
+    <color name="teal_70011">#61018786</color>
+</resources>

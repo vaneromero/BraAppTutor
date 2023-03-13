@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/gentium_basic</item>
+        <item>@font/gentium_book_basic_bold</item>
+    </array>
+</resources>

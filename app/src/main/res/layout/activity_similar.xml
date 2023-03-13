@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".catalogo.fragment.similar">
+
+    <LinearLayout
+        android:id="@+id/producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/avisos1"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gentium_book_basic_bold"
+            android:gravity="center"
+            android:text="@string/producto_similar"
+            android:textColor="@color/negro"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/similar"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/opcion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_bg2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/producto"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/imagenopcion3"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:background="@drawable/similar" />
+
+        <Space
+            android:layout_width="0sp"
+            android:layout_height="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gentium_book_basic_bold"
+            android:text="@string/productos_del_mercado"
+            android:textAlignment="center"
+            android:textColor="@color/negro"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="0sp"
+            android:layout_height="10sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gentium_book_basic_bold"
+            android:text="@string/productos_que_se_pueden_adquirir_en_linea"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/Avaz2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:rotation="180"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/avanza"
+            app:lottie_renderMode="automatic"
+            tools:ignore="MissingClass,RtlHardcoded" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

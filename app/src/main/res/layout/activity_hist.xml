@@ -1,0 +1,175 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparente">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/teal_700"
+        app:cardCornerRadius="16dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="20sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/presione_el_bot_n_de_copiar_si_desea_el_acceso_a_la_p_gina_completa_se_recomienda_visualizar_en_un_ordenador"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/elija_descargas_para_acceder_a_la_ventana_donde_encontrara_nicamente_las_descargas_de_los_archivos"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/presione_el_bot_n_de_compartir_en_sus_redes_sociales_y_m_s"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:gravity="center"
+                android:text="@string/pulse_fuera_del_recuadro_para_salir_del_menu"
+                android:textAlignment="center"
+                android:textColor="@color/blanco"
+                android:textSize="15dp" />
+
+
+          </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="80dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/gentium_book_basic_bold"
+            android:gravity="center"
+            android:text="Elija una opción:"
+            android:textAlignment="center"
+            android:textColor="#050961"
+            android:textSize="35sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/transparente"
+        android:outlineSpotShadowColor="@color/transparente"
+        app:cardBackgroundColor="@color/transparente"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/enlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_redondo"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="Copiar"
+                android:textAlignment="center"
+                android:textColor="@color/blanco"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="15sp"
+                android:layout_height="0sp" />
+
+            <TextView
+                android:id="@+id/descargas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_redondo"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="@string/ir_a_sitio"
+                android:textAlignment="center"
+                android:textColor="@color/blanco"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:cardBackgroundColor="@color/transparente"
+        android:outlineSpotShadowColor="@color/transparente"
+        android:outlineAmbientShadowColor="@color/transparente">
+
+        <TextView
+            android:id="@+id/compart"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:background="@drawable/cuota" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

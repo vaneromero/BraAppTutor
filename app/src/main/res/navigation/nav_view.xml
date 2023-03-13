@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/propio">
+    <fragment
+        android:id="@+id/similar"
+        android:name="com.bp.braapptutor.catalogo.fragment.similar"
+        android:label="activity_similar"
+        tools:layout="@layout/activity_similar" />
+    <fragment
+        android:id="@+id/recomendar"
+        android:name="com.bp.braapptutor.catalogo.fragment.recomendar"
+        android:label="activity_recomendar"
+        tools:layout="@layout/activity_recomendar" />
+    <fragment
+        android:id="@+id/propio"
+        android:name="com.bp.braapptutor.catalogo.fragment.propio"
+        android:label="activity_propio"
+        tools:layout="@layout/activity_propio" />
+</navigation>

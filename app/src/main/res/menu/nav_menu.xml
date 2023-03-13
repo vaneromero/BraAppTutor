@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/propio"
+        android:icon="@drawable/producto"
+        android:title="@string/productos" />
+
+    <item
+        android:id="@+id/recomendar"
+        android:icon="@drawable/recomendacion"
+        android:title="@string/recomendaci_n" />
+
+    <item
+        android:id="@+id/similar"
+        android:icon="@drawable/similar"
+        android:title="@string/productos_similares" />
+
+</menu>
